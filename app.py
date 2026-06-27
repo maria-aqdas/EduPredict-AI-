@@ -65,15 +65,21 @@ print(f"Model Training Complete. Pipeline Accuracy Evaluation: {accuracy * 100:.
 
 # 4. Simulating live prediction & tailored roadmap generation
 print("--- Simulating Live Prediction Output (Sample Student) ---")
-sample_student_metrics = [[75, 55, 60, 4]] # [Attendance, QuizScores, AssignmentCompletion, StudyHours]
+
+# Sample student data wrapped in a DataFrame with exact feature names to prevent warnings
+sample_student_metrics = pd.DataFrame(
+    [[75, 55, 60, 4]], 
+    columns=['Attendance', 'QuizScores', 'AssignmentCompletion', 'StudyHours']
+)
+
 predicted_outcome = model.predict(sample_student_metrics)[0]
 
 generated_roadmap = get_personalized_roadmap(
-    attendance=sample_student_metrics[0][0], 
-    quiz_scores=sample_student_metrics[0][1], 
+    attendance=sample_student_metrics.iloc[0]['Attendance'], 
+    quiz_scores=sample_student_metrics.iloc[0]['QuizScores'], 
     prediction=predicted_outcome
 )
 
-print(f"Input Metrics -> Attendance: {sample_student_metrics[0][0]}%, Quiz Avg: {sample_student_metrics[0][1]}%")
+print(f"Input Metrics -> Attendance: {sample_student_metrics.iloc[0]['Attendance']}%, Quiz Avg: {sample_student_metrics.iloc[0]['QuizScores']}%")
 print("\nGenerated Academic Roadmap:\n" + generated_roadmap)
 print("----------------------------------------------------------")
