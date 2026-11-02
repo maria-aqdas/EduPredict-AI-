@@ -7,7 +7,7 @@
 [![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-green?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
 
 **EduPredict AI** is a machine learning project developed for the **Built with Python Hackathon**. 🏆
-             
+                                    
 It helps identify students who may be at risk of poor academic performance and suggests personalized steps to improve their learning.              
 
 By analyzing information such as attendance and quiz scores, EduPredict AI aims to help students and educators recognize learning gaps early and make better study plans. 📊✨
