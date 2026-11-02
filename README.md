@@ -1,7 +1,7 @@
 # 🎓 EduPredict AI 🤖
 
 ### 📚 Smart Student Performance Prediction & Personalized Study Planning
-
+                    
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Hackathon](https://img.shields.io/badge/Built%20With%20Python-Hackathon-orange?style=for-the-badge)](https://devpost.com/)
 [![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-green?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
