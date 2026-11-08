@@ -1,5 +1,5 @@
 # 🎓 EduPredict AI 🤖
-                                                                                                                      
+                                                                                                                                       
 ### 📚 Smart Student Performance Prediction & Personalized Study Planning                                                     
                                      
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
